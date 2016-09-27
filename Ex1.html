@@ -1,0 +1,40 @@
+<html>
+
+
+
+<head>
+	<title>Exercise 1</title>
+	
+	<script>
+	function val() {
+		var p1 = document.getElementById("pass1").value;
+		var p2 = document.getElementById("pass2").value;	
+		if(p1!=p2){
+			alert("Passwords do not match!");
+		}
+		else if(p1.length < 9){
+			alert("Password is too short!");
+		}
+		else{
+			alert("Password validated!");
+		}
+
+	}
+	</script>
+<head>
+
+
+
+<body>
+	<h3>Please enter a password at least 8 characters long</h3>
+
+	<form id="form" onsubmit="return false;">
+	<input type="text" id="pass1" /><br>
+    	<input type="text" id="pass2" /><br>
+	<button onclick="val()">Validate</button>
+	</form>
+</body>
+
+
+
+</html>

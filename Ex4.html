@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>Exercise 4</title>
+
+	<style>
+	p {
+	    border: 5px solid;
+	}
+	</style>
+
+	<script>
+	function col() {
+		var bord = document.getElementById("border").value;
+		var back = document.getElementById("background").value;
+		document.getElementById("txt").style.borderColor=bord;
+		document.getElementById("txt").style.backgroundColor = back;
+
+	}
+	</script>
+  </head>
+
+  	<body>
+	<p id="txt">"Here's to the crazy ones. The misfits. The rebels. The troublemakers. The round pegs in the square holes. The ones who see things differently. They're not fond of rules. And they have no respect for the status quo. You can quote them, disagree with them, glorify or vilify them. About the only thing you can't do is ignore them. Because they change things. They push the human race forward. And while some may see them as the crazy ones, we see genius. Because the people who are crazy enough to think they can change the world, are the ones who do." -Rob Siltanen</p>
+	<style>
+		p.solid {border-style: solid;}
+	</style>
+
+	<h3>Input colors (by keyword or RGB hex values) </h3>
+
+	<form id="form" onsubmit="return false;">
+	<h4>Border Color:</h4>
+	<input type="text" id="border" /><br>
+	<h4>Background:</h4>
+    	<input type="text" id="background" /><br><br>
+	<button onclick="col()">Change Colors</button>
+	</form>
+
+	</body>
+</html>
